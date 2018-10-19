@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    text-align: center
+}
+
+input[type=button] {
+    background-color: #9c4943;
+    height: 40px;
+    width: 150px;
+    border-radius: 12px;
+    color: white;
+}
+
+input[type=button]:hover {
+    background-color: #EB845D;
+    color: white;
+}

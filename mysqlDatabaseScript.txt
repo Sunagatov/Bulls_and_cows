@@ -1,0 +1,29 @@
+CREATE DATABASE bulls_and_cows;
+
+use bulls_and_cows;
+
+CREATE TABLE users(
+`id` int unsigned NOT NULL AUTO_INCREMENT,  
+`nickname` VARCHAR(50) NOT NULL, 
+`login` VARCHAR(50) NOT NULL,
+`password` VARCHAR(50) NOT NULL,
+`games_count` int unsigned default 0,
+`attempts_count` int unsigned default 0,
+PRIMARY KEY (id),
+UNIQUE KEY `login` (`login`),
+UNIQUE KEY `nickname` (`nickname`)
+);
+
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Ponny', 'borman', 'qwerty', 5, 25);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Marbels', 'buddy', '1234',6, 30);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Udini', 'gerry', 'qw3425',5, 22);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Byant', 'gella', '342432',3,14);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Billy', 'fdddn', '5235rty', 8, 35);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Molly', 'blye', '123532534',6, 50);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Destini', 'geer', 'qw3252353425',12, 52);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Ruty', 'guuur', '3424332522',3,14);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Flock', 'beeer', 'qw325erty', 8, 45);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Tyus', 'bro', '1234325',7, 50);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Fart', 'sers', 'qw3352425',8, 42);
+INSERT INTO users(nickname, login, password, games_count, attempts_count) VALUES ('Yugre', 'sroc', '343252432',3,11);
+
